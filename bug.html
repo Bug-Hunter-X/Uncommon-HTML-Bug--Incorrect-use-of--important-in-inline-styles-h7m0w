@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Incorrect way to hide the div, which causes a bug in some browsers
+    document.getElementById("myDiv").style.display = "none!important";
+  </script>
+</body>
+</html>
